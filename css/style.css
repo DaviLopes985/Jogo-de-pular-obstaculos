@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.telaGame {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 15px solid #1adf1a;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.jogador {
+    position: absolute;
+    bottom: 0px;
+    background-color: #c21111;
+    width: 40px;
+    height: 40px;
+}
+/* ----------------------------- */
+.pular {
+    animation: pular 1s ease-out;
+}
+
+@keyframes pular {
+    from {
+        bottom: 0px;
+    }
+
+    40% {
+        bottom: 80px ;
+    }
+
+    50% {
+        bottom: 80px ;
+    }
+
+    60% {
+        bottom: 80px ;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+/* --------------------------------------- */
+
+.obstaculo {
+    position: absolute;
+    bottom: 0px;
+    background-color: #008000;
+    width: 40px;
+    height: 40px;
+    animation: animarObstaculo 1.6s infinite linear;
+}
+
+@keyframes animarObstaculo {
+    from {
+        right: -40px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
